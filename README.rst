@@ -49,10 +49,12 @@ The `-d`  option will run pywps-flask as daemon and to stop it is necessary to d
     $ kill -15 <PID RETURNED PREVIOUSLY>
 
 ==============
-Local Deployment
+Deployment to Production Server
 ==============
 
-see https://pywps.readthedocs.io/en/latest/deployment.html for Nginx + gunicorn
+See https://pywps.readthedocs.io/en/latest/deployment.html for Nginx + gunicorn. Note that gunicorn and pywps should be installed in the same python interpreter.
+
+The gunicorn systemctl service name should be gunicorn instead of gunicorn3.
 
 ==============
 Docker  images
