@@ -189,7 +189,7 @@ class PCmodel(Process):
             # https://github.com/geopython/pywps/blob/main/pywps/response/execute.py
             response._update_status(WPS_STATUS.FAILED, out_bytes, 10)
 
-# main function is used to test the process from pywps internally(debug this file)
+# main function is used to test the process from pywps internally(e.g. debug this file in vscode)
 # to test the wps from GET/POST requests, see buffer process in ../../tests/test_execute.py
 def main():
     """Example of how to debug this process, executing it outside a PyWPS 
