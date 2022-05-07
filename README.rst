@@ -48,7 +48,11 @@ The `-d`  option will run pywps-flask as daemon and to stop it is necessary to d
     $ fuser tcp/5000
     $ kill -15 <PID RETURNED PREVIOUSLY>
 
+==============
+Local Deployment
+==============
 
+see https://pywps.readthedocs.io/en/latest/deployment.html for Nginx + gunicorn
 
 ==============
 Docker  images

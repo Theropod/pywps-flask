@@ -3,7 +3,7 @@ import json
 import os
 import subprocess
 from pywps import Process, ComplexInput, LiteralOutput, Format
-from pywps.wpsserver import temp_dir
+# from pywps.wpsserver import temp_dir
 
 __author__ = 'matteo'
 
@@ -31,7 +31,7 @@ class Area(Process):
     def _handler(self, request, response):
         # ogr2ogr requires gdal-bin
         from shapely.geometry import shape
-        with temp_dir() as tmp:
+        with self.workdir as tmp:
             input_gml = request.inputs['layer'][0].file
             input_geojson = os.path.join(tmp, 'input.geojson')
             subprocess.check_call(['ogr2ogr', '-f', 'geojson',

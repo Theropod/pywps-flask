@@ -39,7 +39,9 @@ from processes.centroids import Centroids
 from processes.sayhello import SayHello
 from processes.feature_count import FeatureCount
 from processes.buffer import Buffer
-from processes.area import Area
+# from processes.area import Area
+from processes.pc_model import PCmodel
+
 
 
 processes = [
@@ -50,9 +52,7 @@ processes = [
     Sleep(),
     Buffer(),
     # Area(),
-    PCmodel(),
-    Box(),
-    TestJson()
+    PCmodel()
 ]
 
 application = Service(processes, ['pywps.cfg'])
