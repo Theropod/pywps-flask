@@ -49,7 +49,10 @@ processes = [
     UltimateQuestion(),
     Sleep(),
     Buffer(),
-    Area()
+    # Area(),
+    PCmodel(),
+    Box(),
+    TestJson()
 ]
 
 application = Service(processes, ['pywps.cfg'])
