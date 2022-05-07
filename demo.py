@@ -33,7 +33,8 @@ from processes.centroids import Centroids
 from processes.sayhello import SayHello
 from processes.feature_count import FeatureCount
 from processes.buffer import Buffer
-from processes.area import Area
+# from processes.area import Area
+from processes.pc_model import PCmodel
 from processes.bboxinout import Box
 from processes.jsonprocess import TestJson
 
@@ -47,7 +48,8 @@ processes = [
     UltimateQuestion(),
     Sleep(),
     Buffer(),
-    Area(),
+    # Area(),
+    PCmodel(),
     Box(),
     TestJson()
 ]

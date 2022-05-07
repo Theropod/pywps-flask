@@ -9,6 +9,9 @@ logs/*
 .*.un~
 .idea
 
+# vscode
+.vscode
+
 # python setup.py build/install artifacts
 build
 dist
